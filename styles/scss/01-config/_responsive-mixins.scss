@@ -1,0 +1,29 @@
+@mixin xl_view() {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg_view() {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin md_view() {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin sm_view() {
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin xs_view() {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}

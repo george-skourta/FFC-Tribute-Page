@@ -1,0 +1,67 @@
+.navbar {
+
+    /* Navbar: Item */
+    &__item {
+        color: $primary;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 20px 0;
+        margin-right: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        overflow: hidden;
+
+        @include md_view() {
+            display: block;
+            margin: 0 -15px;
+            padding-left: 15px;
+        }
+        
+        @include sm_view() {
+            display: block;
+            margin: 0 -15px;
+            padding-left: 15px;
+        }
+        
+        @include xs_view() {
+            display: block;
+            margin: 0 -15px;
+            padding-left: 15px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            background: $secondary;
+            height: 4px;
+            transition-property: right;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+
+            @include md_view() {
+                height: 100%;
+            }
+            
+            @include sm_view() {
+                height: 100%;
+            }
+            
+            @include xs_view() {
+                height: 100%;
+            }
+        }
+
+        &:hover::before,
+        &:focus::before,
+        &:active::before {
+            right: 0;
+        }
+    }
+}

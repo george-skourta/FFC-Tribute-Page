@@ -1,0 +1,32 @@
+h1 {
+    color: $primary;
+    font-family: $secondary-font;
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    color: $primary;
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+small {
+    color: $primary;
+    display: block;
+}
+
+.title-box {
+    position: relative;
+    margin-bottom: 40px;
+
+    &__divider {
+        background-color: $secondary;
+        border-radius: 2px;
+        width: 10%;
+        height: 6px;
+        display: block;
+    }
+}

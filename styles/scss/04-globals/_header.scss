@@ -1,0 +1,209 @@
+.header {
+    background-color: white;
+
+    /* Header: Top Bar */
+    &__top-bar {
+        border-bottom: 1px solid $primary-light;
+        padding: 20px 100px;
+        display: flex;
+        z-index: 200;
+
+        @include lg_view() {
+            padding: 20px 20px;
+        }
+        
+        @include md_view() {
+            padding: 20px 15px;
+            max-height: 85px;
+        }
+        
+        @include sm_view() {
+            padding: 20px 15px;
+            max-height: 85px;
+        }
+        
+        @include xs_view() {
+            padding: 20px 15px;
+            max-height: 85px;
+        }
+
+        &_left-section {
+            float: left;
+            width: 50%;
+        }
+
+        &_right-section {
+            float: right;
+            width: 50%;
+            text-align: right;
+            position: relative;
+
+            @include md_view() {
+                
+                .button {
+                    display: none;
+                }
+            }
+            
+            @include sm_view() {
+                
+                .button {
+                    display: none;
+                }
+            }
+
+            @include xs_view() {
+                
+                .button {
+                    display: none;
+                }
+            }
+
+            &_menu-button {
+                position: relative;
+                bottom: 3px;
+                display: none;
+
+                @include md_view() {
+                    display: inline-block;
+                }
+
+                @include sm_view() {
+                    display: inline-block;
+                }
+                
+                @include xs_view() {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    /* Header: Bottom Bar */
+    &__bottom-bar {
+        padding: 0 100px;
+        display: flex;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+
+        @include lg_view() {
+            padding: 0 20px;
+        }
+
+        @include md_view() {
+            background-color: white;
+            display: block;
+            padding: 0 15px;
+            position: fixed;
+            top: 85px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: calc(100vh - 85px);
+            transform: translateX(100%);
+
+            &.open {
+                transform: translateX(0);
+            }
+        }
+        
+        @include sm_view() {
+            background-color: white;
+            display: block;
+            padding: 0 15px;
+            position: fixed;
+            top: 85px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: calc(100vh - 85px);
+            transform: translateX(100%);
+
+            &.open {
+                transform: translateX(0);
+            }
+        }
+        
+        @include xs_view() {
+            background-color: white;
+            display: block;
+            padding: 0 15px;
+            position: fixed;
+            top: 85px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: calc(100vh - 85px);
+            transform: translateX(100%);
+
+            &.open {
+                transform: translateX(0);
+            }
+        }
+
+        &_left-section {
+            float: left;
+            width: 50%;
+
+            @include md_view() {
+                float: unset;
+                width: 100%;
+            }
+            
+            @include sm_view() {
+                float: unset;
+                width: 100%;
+            }
+            
+            @include xs_view() {
+                float: unset;
+                width: 100%;
+            }
+        }
+
+        &_right-section {
+            float: right;
+            width: 50%;
+            text-align: right;
+            padding: 12px 0;
+
+            @include md_view() {
+                float: unset;
+                width: 100%;
+            }
+            
+            @include sm_view() {
+                float: unset;
+                width: 100%;
+            }
+            
+            @include xs_view() {
+                float: unset;
+                width: 100%;
+            }
+
+            .box-input {
+
+                &__input {
+                    width: 40%;
+
+                    @include md_view() {
+                        width: 100%;
+                    }
+                    
+                    @include sm_view() {
+                        width: 100%;
+                    }
+                    
+                    @include xs_view() {
+                        width: 100%;
+                    }
+
+                    &:focus {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.button {
+    cursor: pointer;
+    border: 1px solid $primary-light;
+    border-radius: 2px;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    min-height: 40px;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+        outline: 0;
+    }
+
+    /* Secondary */
+    &.secondary {
+        background-color: $secondary;
+        border-color: $secondary;
+        box-shadow: 0 0 10px 1px rgba($color: $secondary, $alpha: .35);
+        color: $primary;
+    }
+}

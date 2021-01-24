@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>FCC Tribute Page</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link type="text/css" rel="stylesheet" href="/styles/css/main.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Header: Top Bar -->
+        <div class="header__top-bar">
+            <div class="header__top-bar_left-section">
+                <a href="#">
+                    <img src="/media/logo/logo.svg" alt="Site Logo" width="40" height="40">
+                </a>
+            </div>
+            <div class="header__top-bar_right-section">
+                <button class="button secondary">Project Info</button>
+                <svg class="ham hamRotate ham1 header__top-bar_right-section_menu-button" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active');toggleMenu();">
+                    <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                    <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                  </svg>
+            </div>
+        </div>
+        <!-- Header: Bottom Bar -->
+        <div class="header__bottom-bar">
+            <div class="header__bottom-bar_left-section">
+                <nav class="navbar">
+                    <a href="#" class="navbar__item">Home</a>
+                    <a href="#" class="navbar__item">People</a>
+                    <a href="#" class="navbar__item">History & Culture</a>
+                    <a href="#" class="navbar__item">About</a>
+                </nav>
+            </div>
+            <div class="header__bottom-bar_right-section">
+                <div class="box-input w-icon">
+                    <i class="material-icons">search</i>
+                    <input type="text" class="box-input__input" placeholder="Search Tributes"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="#" class="breadcrumbs__item">
+            Home
+            <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+        <a href="#" class="breadcrumbs__item">
+            People
+            <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+        <a href="#" class="breadcrumbs__item">
+            Bill Gates
+        </a>
+    </div>
+    <!-- Main Content -->
+    <main>
+        <div class="container-fluid p-side">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div id="image-div">
+                        <img src="/media/images/bill-gates.jpg" alt="Bill Gates smilling" class="img-fluid">
+                        <small>Photo of Bill Gates smilling.</small>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="title-box">
+                        <h1>Bill Gates</h1>
+                        <span class="title-box__divider"></span>
+                    </div>
+                    <p>
+                        Bill Gates is a technologist, business leader, and philanthropist. He grew up in Seattle, Washington, with an amazing and supportive family who encouraged his interest in computers at an early age. He dropped out of college to start Microsoft with his childhood friend Paul Allen. He married Melinda French in 1994 and they have three children. Today, Bill and Melinda Gates co-chair the charitable foundation bearing their names and are working together to give their wealth back to society.
+                    </p>
+                    <p>
+                        Bill grew up in Seattle with his two sisters. His dad, William H. Gates II, is a Seattle attorney and one of the co-chairs of the Bill & Melinda Gates Foundation. His late mother, Mary Gates, was a schoolteacher, University of Washington regent, and chairwoman of United Way International.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>

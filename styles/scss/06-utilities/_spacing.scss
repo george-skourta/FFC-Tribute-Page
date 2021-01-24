@@ -1,0 +1,19 @@
+.p-side {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @include md_view() {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    @include sm_view() {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    @include xs_view() {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
