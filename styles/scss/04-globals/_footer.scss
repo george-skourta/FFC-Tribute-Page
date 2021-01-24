@@ -1,0 +1,17 @@
+.footer {
+    background-color: white;
+    padding: 20px 100px;
+    padding-top: 25px;
+    font-family: $secondary-font;
+    font-size: 14px;
+
+    a {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    span {
+        position: relative;
+        top: 13px;
+    }
+}

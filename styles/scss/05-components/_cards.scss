@@ -1,0 +1,33 @@
+.card {
+    background-color: white;
+    border-radius: 2px;
+    padding: 20px;
+    margin-top: 30px;
+
+    &__header {
+        color: $secondary;
+        font-family: $secondary-font;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+
+        &_text {
+            color: $primary;
+            font-family: $secondary-font;
+            font-size: 14px;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &--bold {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

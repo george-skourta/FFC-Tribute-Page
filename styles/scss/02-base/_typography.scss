@@ -5,6 +5,22 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: $primary;
+    font-family: $secondary-font;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+a {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 p {
     color: $primary;
     font-family: $secondary-font;
@@ -18,14 +34,13 @@ small {
     display: block;
 }
 
-.title-box {
-    position: relative;
-    margin-bottom: 40px;
-
-    &__divider {
+.title {
+    
+    &::after {
+        content: '';
         background-color: $secondary;
         border-radius: 2px;
-        width: 10%;
+        width: 8%;
         height: 6px;
         display: block;
     }

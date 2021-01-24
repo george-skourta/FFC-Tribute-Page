@@ -1,0 +1,29 @@
+.img-container {
+    position: relative;
+
+    &__title {
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
+
+        h1 {
+            color: white;
+            font-family: $secondary-font;
+        }
+
+        &_underline {
+            background-color: $secondary;
+            border-radius: 2px;
+            width: 60%;
+            height: 6px;
+            display: block;
+        }
+    }
+
+    &__caption {
+        color: white;
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+    }
+}
