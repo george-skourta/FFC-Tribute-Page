@@ -137,7 +137,8 @@
 
 @media (max-width: 767px) {
     ul.timeline:before {
-        left: 40px;
+        left: 0px;
+        height: 88%;
     }
     ul.timeline > li {
         margin-bottom: 0px;
@@ -147,12 +148,12 @@
         clear: left;
     }
     ul.timeline > li > .timeline-panel {
-        width: calc(100% - 65px);
-        width: -moz-calc(100% - 65px);
-        width: -webkit-calc(100% - 65px);
+        width: calc(100% - 40px);
+        width: -moz-calc(100% - 40px);
+        width: -webkit-calc(100% - 40px);
     }
     ul.timeline > li > .timeline-badge {
-        left: 28px;
+        left: -12px;
         margin-left: 0;
         top: 16px;
     }
@@ -178,6 +179,6 @@
         margin-bottom: 30px;
     }
     .timeline > li.timeline-inverted > .timeline-badge {
-        left: 28px;
+        left: -12px;
     }
 }

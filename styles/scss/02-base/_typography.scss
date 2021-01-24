@@ -43,5 +43,17 @@ small {
         width: 8%;
         height: 6px;
         display: block;
+
+        @include md_view() {
+            width: 20%;
+        }
+        
+        @include sm_view() {
+            width: 20%;
+        }
+        
+        @include xs_view() {
+            width: 20%;
+        }
     }
 }

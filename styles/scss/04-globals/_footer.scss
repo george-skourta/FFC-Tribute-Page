@@ -5,6 +5,36 @@
     font-family: $secondary-font;
     font-size: 14px;
 
+    @include md_view() {
+        padding: 20px 15px;
+        text-align: center;
+
+        .icons {
+            text-align: center !important;
+            margin-top: 40px;
+        }
+    }
+
+    @include sm_view() {
+        padding: 20px 15px;
+        text-align: center;
+
+        .icons {
+            text-align: center !important;
+            margin-top: 40px;
+        }
+    }
+   
+    @include xs_view() {
+        padding: 20px 15px;
+        text-align: center;
+
+        .icons {
+            text-align: center !important;
+            margin-top: 40px;
+        }
+    }
+
     a {
         display: inline-block;
         margin-left: 10px;
@@ -14,4 +44,5 @@
         position: relative;
         top: 13px;
     }
+
 }
