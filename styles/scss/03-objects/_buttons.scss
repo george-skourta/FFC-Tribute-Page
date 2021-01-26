@@ -20,6 +20,17 @@
         background-color: $secondary;
         border-color: $secondary;
         box-shadow: 0 0 10px 1px rgba($color: $secondary, $alpha: .35);
-        color: $primary;
+        color: white;
+    }
+
+    /* Flat Secondary */
+    &.flat-secondary {
+        background-color: transparent;
+        border-color: transparent;
+        color: $secondary;
+
+        &:hover {
+            background-color: $secondary-light;
+        }
     }
 }

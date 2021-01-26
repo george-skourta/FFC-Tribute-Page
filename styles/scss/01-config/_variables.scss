@@ -1,9 +1,10 @@
 /* Color Variables */
-$primary: #303F74;
-$secondary: #1AE5BE;
+$primary: #002652;
+$secondary: #0160D0;
 $very-light-blue: #F5F7FA;
 $primary-light: rgba($color: $primary, $alpha: .12);
+$secondary-light: rgba($color: $secondary, $alpha: .12);
 
 /* Font Variables */
-$primary-font: 'Source Sans Pro', sans-serif;
-$secondary-font: 'Spartan', sans-serif;
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Roboto', sans-serif;

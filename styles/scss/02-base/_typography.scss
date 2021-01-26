@@ -1,15 +1,39 @@
 h1 {
     color: $primary;
     font-family: $secondary-font;
-    font-size: 50px;
-    margin: 0;
+    font-size: 60px;
+    margin: 20px 0;
+
+    @include md_view() {
+        font-size: 50px;
+    }
+
+    @include sm_view() {
+        font-size: 40px;
+    }
+    
+    @include xs_view() {
+        font-size: 40px;
+    }
 }
 
 h2 {
     color: $primary;
     font-family: $secondary-font;
-    font-size: 30px;
+    font-size: 40px;
     margin: 30px 0;
+
+    @include md_view() {
+        font-size: 30px;
+    }
+
+    @include sm_view() {
+        font-size: 25px;
+    }
+    
+    @include xs_view() {
+        font-size: 25px;
+    }
 }
 
 a {

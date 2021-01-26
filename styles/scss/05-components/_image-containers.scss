@@ -1,77 +1,10 @@
 .img-container {
     position: relative;
 
-    &__title {
-        position: absolute;
-        left: 30px;
-        bottom: 20px;
-
-        @include md_view() {
-            bottom: 0;
-            left: 10px;
-
-            h1 {
-                font-size: 40px;
-            }
-        }
-        
-        @include sm_view() {
-            bottom: 0;
-            left: 10px;
-
-            h1 {
-                font-size: 40px;
-            }
-        }
-        
-        @include xs_view() {
-            bottom: 0;
-            left: 10px;
-
-            h1 {
-                font-size: 40px;
-            }
-        }
-
-        h1 {
-            color: white;
-            font-family: $secondary-font;
-        }
-
-        &_underline {
-            background-color: $secondary;
-            border-radius: 2px;
-            width: 60%;
-            height: 6px;
-            display: block;
-        }
-    }
-
     &__caption {
         color: white;
         position: absolute;
         right: 20px;
-        bottom: 30px;
-
-        @include md_view() {
-            color: $primary;
-            bottom: -20px;
-            left: 0;
-            right: unset;
-        }
-        
-        @include sm_view() {
-            color: $primary;
-            bottom: -20px;
-            left: 0;
-            right: unset;
-        }
-        
-        @include xs_view() {
-            color: $primary;
-            bottom: -20px;
-            left: 0;
-            right: unset;
-        }
+        bottom: 20px;
     }
 }

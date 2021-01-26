@@ -17,11 +17,12 @@
         <div class="header__top-bar">
             <div class="header__top-bar_left-section">
                 <a href="#">
-                    <img src="/media/logo/logo.svg" alt="Site Logo" width="40" height="40">
+                    <img src="/media/logo/logo.png" alt="Site Logo" width="40" height="40">
                 </a>
             </div>
             <div class="header__top-bar_right-section">
-                <button class="button secondary">Project Info</button>
+                <button class="button flat-secondary">Sign Up</button>
+                <button class="button secondary">Sign In</button>
                 <svg class="ham hamRotate ham1 header__top-bar_right-section_menu-button" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active');toggleMenu();">
                     <path
                         class="line top"
@@ -32,12 +33,20 @@
                     <path
                         class="line bottom"
                         d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-                  </svg>
+                </svg>
             </div>
         </div>
         <!-- Header: Bottom Bar -->
         <div class="header__bottom-bar">
             <div class="header__bottom-bar_left-section">
+                <div class="row mobile-only" style="margin-top: 20px;margin-bottom: 20px;">
+                    <div class="col-6">
+                        <button class="button secondary" style="width: 100%;">Sign In</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="button flat-secondary" style="width: 100%;">Sign Up</button>
+                    </div>
+                </div>
                 <nav class="navbar">
                     <a href="#" class="navbar__item">Home</a>
                     <a href="#" class="navbar__item">People</a>
@@ -76,19 +85,16 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div id="img-div" class="img-container">
-                            <img id="image" src="/media/images/bill-gates-desktop.jpg" alt="Bill Gates smilling">
-                            <div id="title" class="img-container__title">
-                                <h1>Bill Gates</h1>
-                            </div>
+                            <img id="image" src="/media/images/Main_Img_Desktop.jpg" alt="Bill Gates smilling">
                             <small id="img-caption" class="img-container__caption">Photo of Bill Gates smilling</small>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="tribute-info" style="margin-top: 20px;">
+            <section id="tribute-info">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12">
-                        <h2 class="title">About Bill</h2>
+                        <h1>Bill Gates</h1>
                         <p>
                             Bill Gates is a technologist, business leader, and philanthropist. He grew up in Seattle, Washington, with an amazing and supportive family who encouraged his interest in computers at an early age. He dropped out of college to start Microsoft with his childhood friend Paul Allen. He married Melinda French in 1994 and they have three children. Today, Bill and Melinda Gates co-chair the charitable foundation bearing their names and are working together to give their wealth back to society.
                         </p>
@@ -104,183 +110,91 @@
                     </div>
                 </div>
             </section>
-            <section id="timeline" style="margin-top: 20px;">
-                <h2 class="title">Timeline</h2>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+            <section id="timeline">
+                <h2>Timeline</h2>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1955</span>
+                            <span class="card__text">A legend is born on Seattle, WA.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1955
-                            </div>
-                            <div class="timeline-body">
-                                <p>A legend is Born on Seattle, WA.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1967</span>
+                            <span class="card__text">Enrolled at Lakeside School. First used computer.</span>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1968</span>
+                            <span class="card__text">Began programming with Paul Allen in the computer center.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1967
-                            </div>
-                            <div class="timeline-body">
-                                <p>Enrolled at Lakeside School. First used computer.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1973</span>
+                            <span class="card__text">Entered Harvard University.</span>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1975</span>
+                            <span class="card__text">Started Micro-Soft with Paul Allen in Albuquerque, NM.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1968
-                            </div>
-                            <div class="timeline-body">
-                                <p>Began programming with Paul Allen in the computer center.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1976</span>
+                            <span class="card__text">Changed company name to Microsoft.</span>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1979</span>
+                            <span class="card__text">Microsoft moved to Washington state.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1973
-                            </div>
-                            <div class="timeline-body">
-                                <p>Entered Harvard university.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1985</span>
+                            <span class="card__text">Windows 1.0 launched.</span>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">1995</span>
+                            <span class="card__text">Windows 95 launched.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1975
-                            </div>
-                            <div class="timeline-body">
-                                <p>Started Micro-Soft with Paul Allen in Albuquerque, NM.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">2000</span>
+                            <span class="card__text">Assumed role of Chief Software Architect, as Steve Ballmer assumed role of Microsoft CEO.</span>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">2001</span>
+                            <span class="card__text">The original Xbox released.</span>
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1976
-                            </div>
-                            <div class="timeline-body">
-                                <p>Changed company name to Microsoft.</p>
-                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <span class="card__title">2014</span>
+                            <span class="card__text">Stepped down as chairman. Remained on the board and began serving as technology advisor.</span>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1979
-                            </div>
-                            <div class="timeline-body">
-                                <p>Microsoft moved to Washington State.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1985
-                            </div>
-                            <div class="timeline-body">
-                                <p>Windows 1.0 launched.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                1995
-                            </div>
-                            <div class="timeline-body">
-                                <p>Windows 95 launched.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                2000
-                            </div>
-                            <div class="timeline-body">
-                                <p>Assumed role of Chief Software Architect, as Steve Ballmer assumed role of Microsoft CEO.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                2001
-                            </div>
-                            <div class="timeline-body">
-                                <p>The original Xbox released.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                2008
-                            </div>
-                            <div class="timeline-body">
-                                <p>Left his daily job at Microsoft.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge">
-                            <a><i class="material-icons">stop_circle</i></a>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                2014
-                            </div>
-                            <div class="timeline-body">
-                                <p>Stepped down as chairman. Remained on the board and began serving as technology advisor.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="clearfix no-float">
-                        <p>Want to learn more about Bill Gates? Visit <a id="tribute-link" href="https://www.gatesnotes.com/Bio" target="_blank">www.gatesnotes.com</a></p>
-                    </li>
-                </ul>
-                
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <p>Want to know more about Bill Gates? Visit <a href="https://www.gatesnotes.com/Bio" target="_blank">www.gatesnotes.com</a></p>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -288,19 +202,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="row">
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <span>Made By George Shkurta. Part of the <a href="https://www.freecodecamp.org/learn">FreeCodeCamp Responsive Web Design Projects</a>.</span>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 footer__left">
+                <span>Made By <a href="#">George Shkurta</a></span>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 icons" style="text-align: right;">
-                <a href="#">
-                    <img src="/media/icons/facebook-square-brands 1.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="/media/icons/instagram-square-brands 1.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="/media/icons/twitter-square-brands 1.png" alt="" >
-                </a>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 footer__right">
+                <span>Part of the <a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp Responsive Web Design Projects</a></span>
             </div>
         </div>
     </footer>

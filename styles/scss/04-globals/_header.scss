@@ -38,9 +38,13 @@
             text-align: right;
             position: relative;
 
+            .button {
+                margin-left: 15px;
+            }
+
             @include md_view() {
                 
-                .button {
+                svg {
                     display: none;
                 }
             }
@@ -86,25 +90,16 @@
         z-index: 100;
         transition: all 0.3s ease-in-out;
 
+        .mobile-only {
+            display: none;
+        }
+
         @include lg_view() {
             padding: 0 20px;
         }
 
         @include md_view() {
-            background-color: white;
-            display: block;
             padding: 0 15px;
-            position: fixed;
-            top: 85px;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            height: calc(100vh - 85px);
-            transform: translateX(100%);
-
-            &.open {
-                transform: translateX(0);
-            }
         }
         
         @include sm_view() {
@@ -121,6 +116,10 @@
 
             &.open {
                 transform: translateX(0);
+            }
+
+            .mobile-only {
+                display: flex;
             }
         }
         
@@ -139,6 +138,10 @@
             &.open {
                 transform: translateX(0);
             }
+
+            .mobile-only {
+                display: flex;
+            }
         }
 
         &_left-section {
@@ -146,8 +149,8 @@
             width: 50%;
 
             @include md_view() {
-                float: unset;
-                width: 100%;
+                float: left;
+                width: 70%;
             }
             
             @include sm_view() {
@@ -168,8 +171,8 @@
             padding: 12px 0;
 
             @include md_view() {
-                float: unset;
-                width: 100%;
+                float: right;
+                width: 30%;
             }
             
             @include sm_view() {

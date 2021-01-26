@@ -1,48 +1,57 @@
 .footer {
     background-color: white;
     padding: 20px 100px;
+    margin-top: 30px;
     padding-top: 25px;
     font-family: $secondary-font;
     font-size: 14px;
 
+    &__left {
+        color: $primary;
+    }
+
+    &__right {
+        color: $primary;
+        text-align: right;
+    }
+
     @include md_view() {
         padding: 20px 15px;
-        text-align: center;
 
-        .icons {
-            text-align: center !important;
-            margin-top: 40px;
+        &__left {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        &__right {
+            text-align: center;
         }
     }
 
     @include sm_view() {
         padding: 20px 15px;
-        text-align: center;
 
-        .icons {
-            text-align: center !important;
-            margin-top: 40px;
+        &__left {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        &__right {
+            text-align: center;
         }
     }
    
     @include xs_view() {
         padding: 20px 15px;
-        text-align: center;
 
-        .icons {
-            text-align: center !important;
-            margin-top: 40px;
+        &__left {
+            text-align: center;
+            margin-bottom: 20px;
         }
-    }
-
-    a {
-        display: inline-block;
-        margin-left: 10px;
-    }
-
-    span {
-        position: relative;
-        top: 13px;
+    
+        &__right {
+            text-align: center;
+        }   
     }
 
 }

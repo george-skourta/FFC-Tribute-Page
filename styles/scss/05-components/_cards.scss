@@ -1,33 +1,38 @@
 .card {
     background-color: white;
     border-radius: 2px;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 15px;
+    margin-bottom: 30px;
+    min-height: 127px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-    &__header {
+    &:hover {
+        background-color: $secondary;
+        box-shadow: 0  0 10px 0 rgba($color: $secondary, $alpha: .45);
+        transform: scale(1.1);
+
+        .card__title {
+            color: white;
+        }
+        .card__text {
+            color: white;
+        }
+    }
+
+    &__title {
         color: $secondary;
-        font-family: $secondary-font;
         font-size: 30px;
         font-weight: 600;
+        display: block;
         margin-bottom: 20px;
     }
 
-    &__body {
-
-        &_text {
-            color: $primary;
-            font-family: $secondary-font;
-            font-size: 14px;
-            margin-bottom: 20px;
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-
-            &--bold {
-                display: block;
-                margin-bottom: 5px;
-            }
-        }
+    &__text {
+        color: $primary;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        display: block;
     }
 }
